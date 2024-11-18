@@ -12,6 +12,16 @@ The repository includes:
 - Deployment of the trained model for real-world predictions.
 
 ---
+## 🖥️ Access the Model
+
+➡️ **[Fine-Tuned Model gastonduault/music-classifier](https://huggingface.co/gastonduault/music-classifier)**
+
+### Metrics
+- **Validation Accuracy**: 75%
+- **F1 Score**: 74%
+- **Validation Loss**: 0.77
+
+---
 
 ## 📊 Dataset
 The dataset used for training is `lewtun/music_genres_small` from Hugging Face's datasets library. It contains diverse audio tracks labeled with genres.
@@ -27,17 +37,6 @@ The dataset used for training is `lewtun/music_genres_small` from Hugging Face's
 - `Instrumental`
 - `Pop`
 - `International`
-
----
-## 🖥️ Access the Model on Hugging Face
-You can directly access the fine-tuned model on Hugging Face via the link below:
-
-➡️ **[My Fine-Tuned Wav2Vec2 Model on Hugging Face](https://huggingface.co/gastonduault/music-classifier)**
-
-### Metrics
-- **Validation Accuracy**: 75%
-- **F1 Score**: 74%
-- **Validation Loss**: 0.77
 
 ---
 
