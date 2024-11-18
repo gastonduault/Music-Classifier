@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploader un fichier audio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h3>Uploader un fichier audio (.wav)</h3>
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+<ul>
+    {% for message in messages %}
+    <li>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endwith %}
+
+<form action="/" method="POST" onsubmit="showLoader(); disableButton();" enctype="multipart/form-data">
+    <input type="file" name="file" id="file" accept=".wav" required>
+    <button type="submit">Analyze</button>
+</form>
+
+<img id="loader" src="{{ url_for('static', filename='loader.gif') }}" alt="Loading...">
+
+{% if result %}
+<h4>Musical Genre :</h4>
+<p>{{ result }}</p>
+{% endif %}
+
+<script>
+  function showLoader() {
+    document.getElementById("loader").style.display = "block";
+  }
+  function disableButton() {
+    document.getElementById("submit-button").disabled = true;
+  }
+</script>
+</body>
+</html>

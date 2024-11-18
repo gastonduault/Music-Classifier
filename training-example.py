@@ -1,4 +1,4 @@
-# Used on Google Colab with
+# Used on Google Colab with T4 GPU
 
 # !pip install datasets
 from datasets import load_dataset
