@@ -1,6 +1,6 @@
 # Music Genre Classification with AI🎶
 
-This **[model](https://huggingface.co/gastonduault/music-classifier)** classifies music genres based on audio signals. It was fine-tuned on the
+The **[music-classifier model](https://huggingface.co/gastonduault/music-classifier)** classifies music genres based on audio signals. It was fine-tuned on the
 **[music_genres_small](https://huggingface.co/datasets/lewtun/music_genres_small)** dataset.
 
 This project leverages the **[Wav2Vec2](https://huggingface.co/facebook/wav2vec2-large)** model from Facebook, a state-of-the-art transformer-based architecture for audio processing, to classify music genres. The model is fine-tuned on a dataset of music samples to predict the genre of a given audio file.
